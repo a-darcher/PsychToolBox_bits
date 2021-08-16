@@ -53,7 +53,9 @@ try
     
     % Playback loop: Runs until end of movie or keypress:
     while 1
-              
+       
+       
+      %%%%%% PAUSE CODE %%%%%%%
       [keyIsDown,secs,keyCode]=KbCheck;
       if (keyIsDown==1 && keyCode(space))
         pausePoint = Screen('GetMovieTimeIndex', movie);
